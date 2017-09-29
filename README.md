@@ -1,2 +1,2 @@
 # docker-hugo-dev
-Docker image with Go tooling, Hugo and node JS.
+Docker image with Go tooling, Hugo, Sass and node JS.
