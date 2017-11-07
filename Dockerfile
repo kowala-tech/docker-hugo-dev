@@ -3,8 +3,9 @@ FROM deis/go-dev
 RUN apt-get update
 
 # Ruby
-RUN apt-get install hugo ruby ruby-dev curl apt-utils -y
+RUN apt-get install hugo ruby ruby-dev ruby-bundler curl apt-utils -y
 RUN gem install sass --no-user-install
+RUN gem install mime-types:2.0 rake cucumber capybara selenium-webdriver rspec browserstack-local parallel_tests
 
 # Node.JS
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash
