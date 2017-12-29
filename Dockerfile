@@ -6,6 +6,7 @@ RUN apt-get update
 RUN apt-get install ruby ruby-dev ruby-bundler curl apt-utils -y
 RUN gem install sass --no-user-install
 RUN gem install mime-types:2.0 rake cucumber capybara selenium-webdriver rspec browserstack-local parallel_tests
+RUN gem install toml-rb
 
 #Hugo - October 2017 build
 ENV HUGO_VERSION=0.30.2
