@@ -17,7 +17,7 @@ RUN tar -xf /tmp/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C /tmp \
     && rm -rf /tmp/hugo_${HUGO_VERSION}_linux_amd64
 
 # Node.JS
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
 RUN apt-get install nodejs -y
 
 # Typescript
